@@ -49,6 +49,14 @@ nav {
   height: 40px;
 }
 
+.hero-logo {
+  width: 360px;
+  max-width: 90vw;
+  margin: 0 auto 2rem auto;
+  display: block;
+  filter: drop-shadow(0 8px 24px rgba(232,115,106,0.18));
+}
+
 .nav-logo span {
   font-size: 1.25rem;
   font-weight: 700;
