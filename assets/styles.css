@@ -1,0 +1,558 @@
+/* =====================
+   Gilda.mx — Estilos
+   Paleta: coral #E8736A, teal #2ABFBF
+   ===================== */
+
+:root {
+  --coral: #E8736A;
+  --teal: #2ABFBF;
+  --white: #FFFFFF;
+  --dark: #2D2D2D;
+  --gray: #6B7280;
+  --light-bg: #F9FAFB;
+  --border: #E5E7EB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+/* ---- NAV ---- */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  z-index: 100;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-logo span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--coral);
+}
+
+.nav-cta {
+  background: var(--coral);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.nav-cta:hover {
+  background: #d4645c;
+}
+
+/* ---- HERO ---- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  background: linear-gradient(160deg, #fff9f8 0%, #f0fafa 100%);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--dark);
+  max-width: 750px;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 span {
+  color: var(--coral);
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: var(--gray);
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: var(--coral);
+  color: var(--white);
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+  background: #d4645c;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--teal);
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--teal);
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background: var(--teal);
+  color: var(--white);
+}
+
+/* Mockup WA */
+.wa-mockup {
+  margin-top: 3.5rem;
+  background: #ECE5DD;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+.wa-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #D1C8BF;
+  margin-bottom: 1rem;
+}
+
+.wa-header img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.wa-header .wa-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.wa-header .wa-status {
+  font-size: 0.75rem;
+  color: #25D366;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.75rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.bubble.incoming {
+  background: var(--white);
+  border-top-left-radius: 0.1rem;
+  align-self: flex-start;
+}
+
+.bubble.outgoing {
+  background: #DCF8C6;
+  border-top-right-radius: 0.1rem;
+  margin-left: auto;
+}
+
+.bubbles {
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble-time {
+  font-size: 0.65rem;
+  color: #999;
+  text-align: right;
+  margin-top: 0.2rem;
+}
+
+/* ---- DOLOR ---- */
+.section-pain {
+  padding: 5rem 2rem;
+  background: var(--white);
+}
+
+.section-pain h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: var(--dark);
+}
+
+.pain-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pain-card {
+  background: var(--light-bg);
+  border-left: 4px solid var(--coral);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+}
+
+.pain-emoji {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.pain-card p {
+  font-size: 0.95rem;
+  color: var(--gray);
+}
+
+.pain-resolution {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+/* ---- CÓMO FUNCIONA ---- */
+.section-how {
+  padding: 5rem 2rem;
+  background: linear-gradient(160deg, #f0fafa 0%, #fff9f8 100%);
+}
+
+.section-how h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.steps {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  max-width: 260px;
+}
+
+.step-number {
+  width: 52px;
+  height: 52px;
+  background: var(--teal);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 1rem;
+}
+
+.step h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.how-disclaimer {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-style: italic;
+}
+
+/* ---- BENEFICIOS ---- */
+.section-benefits {
+  padding: 5rem 2rem;
+  background: var(--white);
+}
+
+.section-benefits h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.benefits-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: var(--light-bg);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  flex: 1;
+  min-width: 220px;
+  max-width: 270px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.benefit-card p {
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+
+/* ---- PRECIO ---- */
+.section-price {
+  padding: 5rem 2rem;
+  background: linear-gradient(160deg, #fff9f8 0%, #f0fafa 100%);
+}
+
+.section-price h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.section-price .subtitle {
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 3rem;
+}
+
+.price-card {
+  background: var(--white);
+  border: 2px solid var(--coral);
+  border-radius: 1.5rem;
+  padding: 3rem 2.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(232, 115, 106, 0.15);
+}
+
+.price-amount {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--coral);
+  line-height: 1;
+}
+
+.price-period {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.price-features {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.price-features li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.price-features li:last-child {
+  border-bottom: none;
+}
+
+.check {
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.price-cta {
+  display: block;
+  background: var(--coral);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+  margin-bottom: 1rem;
+}
+
+.price-cta:hover {
+  background: #d4645c;
+  transform: translateY(-1px);
+}
+
+.price-disclaimer {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+/* ---- SOCIAL PROOF ---- */
+.section-proof {
+  padding: 5rem 2rem;
+  background: var(--white);
+  text-align: center;
+}
+
+.section-proof h2 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.proof-placeholder {
+  background: var(--light-bg);
+  border: 2px dashed var(--border);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  color: var(--gray);
+  font-style: italic;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: var(--dark);
+  color: #9CA3AF;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+footer h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  margin-bottom: 2rem;
+}
+
+.footer-wa:hover {
+  background: #1ebe5a;
+}
+
+.footer-meta {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  opacity: 0.6;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 640px) {
+  nav {
+    padding: 0.75rem 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .pain-card, .benefit-card, .step {
+    max-width: 100%;
+  }
+
+  .price-card {
+    padding: 2rem 1.5rem;
+  }
+}
